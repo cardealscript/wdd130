@@ -47,6 +47,9 @@ aside img {
 main img {
     width: 150px;
     height: auto;
+    border: 2px solid darkblue;
+    padding: 1px;
+    background-color: #f9f9f9;
 }
 
 footer {
