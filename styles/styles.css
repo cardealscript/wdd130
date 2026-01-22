@@ -1,3 +1,7 @@
+/* ============================================================= */
+/* Original CSS (before variables) */
+/* ============================================================= */
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -58,4 +62,35 @@ footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+/* ============================================================= */
+/* New part: CSS Variables */
+/* ============================================================= */
+
+/* CSS variables are defined here to replace repeated values (colors, fonts, spacing).
+   This makes the stylesheet easier to maintain and ensures consistency across the site. */
+
+:root {
+    --heading-background-color: black;
+    --heading-text-color: white;
+    --heading-font: 'Montserrat', Helvetica, sans-serif;
+    --padding: 0.7rem;
+    --border: 1px solid rgb(0 0 0 / 0.1);
+}
+
+/* h1 now uses variables for background color, text color, font, and padding.
+   This demonstrates how variables can replace hard-coded values. */
+h1 {
+    background-color: var(--heading-background-color);
+    color: var(--heading-text-color);
+    font-family: var(--heading-font);
+    padding: var(--padding);
+}
+
+/* aside now uses variables for padding and border, improving consistency. */
+aside {
+    margin: 10px auto;
+    padding: var(--padding);
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
 }
