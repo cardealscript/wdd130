@@ -1,23 +1,11 @@
 :root {
-    --green-color: rgb(20, 175, 30);
-    --blue1-color: rgb(0, 127, 255);
-    --blue2-color: rgb(0, 160, 255);
-    --red-color: rgb(212, 0, 0);
-    --white-color: rgb(255, 255, 255);
-    --black-color: rgb(0, 0, 0);
-    --orange-color: rgb(255, 85, 0);
-    --yellow-color: rgb(255, 255, 0);
-    /* =========================================================== */
+    --primary-color: rgb(0, 127, 255);
+    --secondary-color: rgb(0, 160, 255);
+    --accent-color: rgb(212, 0, 0);
+    --background-color: rgb(0, 0, 0);
+    --text-color: rgb(255, 255, 255);
     --heading-font: "Times New Roman", "Georgia", serif;
-    --body-font: Arial, Hevetica, sans-serif;
-}
-
-header {
-    background-color: var(--blue1-color);
-    color: var(--white-color);
-    display: flex;
-    align-items: center;
-    padding: 8px 16px;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -27,57 +15,53 @@ header {
 }
 
 body {
-    background-color: var(--black-color);
+    background-color: var(--background-color);
     font-family: var(--body-font);
-    color: var(--white-color);
+    color: var(--text-color);
 }
 
 header {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
     width: 840px;
     margin: 0 auto;
-
 }
 
-main {
-    width: 840px;
-    margin: 0 auto;
+header img {
+    width: 60px;
+    height: auto;
 }
 
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+main,
 footer {
     width: 840px;
     margin: 0 auto;
-    bottom: 0;
-    background-color: var(--blue1-color);
-    color: var(--white-color);
-    border-top: 2px solid var(--red-color);
 }
 
 h1,
 h2 {
     font-family: var(--heading-font);
     padding: 10px;
-    color: var(--black-color);
-    background-color: var(--blue1-color);
 }
-
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-
-}
-
-.socialmedia img {
-    text-decoration: none;
-    /* =========================================================== */
-    width: 32px;
-    height: 32px;
-    margin: 0 8px;
-}
-
-/* ====Style the Hero Div with Overlays==== */
 
 .hero {
     position: relative;
@@ -89,27 +73,49 @@ article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
-    padding: 16PX;
+    padding: 16px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--blue2-color);
-    color: var(--red-color);
-}
-
-.hero article img {
-    float: right;
-    width: 150px;
-    border: 2px solid var(--red-color);
+    opacity: 0.9;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    /* contraste melhorado */
 }
 
 .hero article {
     position: absolute;
     bottom: 0;
+    left: 0;
+    right: 0;
     background-color: rgba(0, 0, 0, 0.6);
-    border: 1px solid var(--red-color);
-    border-radius: 0px;
+    border: 1px solid var(--accent-color);
+    padding: 8px;
+}
+
+.hero article img {
+    float: right;
+    width: 150px;
+    border: 2px solid var(--accent-color);
+    margin-left: 12px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid var(--accent-color);
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+    margin: 0 8px;
 }
