@@ -1,0 +1,115 @@
+:root {
+    --green-color: rgb(20, 175, 30);
+    --blue1-color: rgb(0, 127, 255);
+    --blue2-color: rgb(0, 160, 255);
+    --red-color: rgb(212, 0, 0);
+    --white-color: rgb(255, 255, 255);
+    --black-color: rgb(0, 0, 0);
+    --orange-color: rgb(255, 85, 0);
+    --yellow-color: rgb(255, 255, 0);
+    /* =========================================================== */
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Hevetica, sans-serif;
+}
+
+header {
+    background-color: var(--blue1-color);
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--black-color);
+    font-family: var(--body-font);
+    color: var(--white-color);
+}
+
+header {
+    width: 840px;
+    margin: 0 auto;
+
+}
+
+main {
+    width: 840px;
+    margin: 0 auto;
+}
+
+footer {
+    width: 840px;
+    margin: 0 auto;
+    bottom: 0;
+    background-color: var(--blue1-color);
+    color: var(--white-color);
+    border-top: 2px solid var(--red-color);
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    padding: 10px;
+    color: var(--black-color);
+    background-color: var(--blue1-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+
+}
+
+.socialmedia img {
+    text-decoration: none;
+    /* =========================================================== */
+    width: 32px;
+    height: 32px;
+    margin: 0 8px;
+}
+
+/* ====Style the Hero Div with Overlays==== */
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16PX;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--blue2-color);
+    color: var(--red-color);
+}
+
+.hero article img {
+    float: right;
+    width: 150px;
+    border: 2px solid var(--red-color);
+}
+
+.hero article {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid var(--red-color);
+    border-radius: 0px;
+}
