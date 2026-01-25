@@ -123,9 +123,9 @@ footer {
 /* ==================================== */
 
 section:first-of-type h2 {
-    color: var(--accent-color);
+    color: var(--text-color);
 }
 
 section:last-of-type h2 {
-    color: var(--accent-color);
+    color: var(--text-color);
 }
