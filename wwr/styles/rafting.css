@@ -23,9 +23,10 @@ body {
 header {
     background-color: var(--primary-color);
     color: var(--background-color);
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    /* logo + nav */
     align-items: center;
-    justify-content: space-between;
     padding: 8px 16px;
     width: 840px;
     margin: 0 auto;
@@ -39,7 +40,9 @@ header img {
 header nav ul {
     list-style: none;
     display: flex;
+    /* flex para links */
     gap: 20px;
+    justify-content: flex-end;
 }
 
 header nav ul li a {
@@ -83,7 +86,6 @@ h2 {
     opacity: 0.9;
     background-color: var(--secondary-color);
     color: var(--background-color);
-    /* contraste melhorado */
 }
 
 .hero article {
@@ -103,30 +105,67 @@ h2 {
     margin-left: 12px;
 }
 
-footer {
-    background-color: var(--primary-color);
-    color: var(--background-color);
+/* ================= History Section ================= */
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.history-content img {
+    width: 100%;
+    border: 2px solid var(--primary-color);
+}
+
+/* ================= Adventures Section ================= */
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.adventure-gallery figure {
     text-align: center;
+    flex: 1;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+    border: 2px solid var(--primary-color);
+}
+
+.adventure-gallery figcaption {
+    margin-top: 6px;
+    font-size: 0.9em;
+    color: var(--text-color);
+}
+
+/* ================= Footer ================= */
+footer {
+    background-color: var(--text-color);
+    color: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
-    border-top: 2px solid var(--text-color);
+    border-top: 4px solid var(--primary-color);
 }
 
-.socialmedia a {
-    text-decoration: none;
+footer p {
+    margin: 0;
 }
 
-.socialmedia img {
+footer .socialmedia {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .socialmedia img {
     width: 32px;
     height: 32px;
-    margin: 0 8px;
-}
-
-/* ==================================== */
-
-section:first-of-type h2 {
-    color: var(--text-color);
-}
-
-section:last-of-type h2 {
-    color: var(--text-color);
+    margin-left: 8px;
 }
