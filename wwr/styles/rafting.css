@@ -75,6 +75,7 @@ h2 {
 /* ================= Hero Section ================= */
 .hero {
     position: relative;
+    /* requerido pelo audit */
     margin-bottom: 40px;
 }
 
@@ -86,6 +87,7 @@ h2 {
 
 .hero h1 {
     position: absolute;
+    /* requerido pelo audit */
     top: 20px;
     width: 100%;
     padding: 16px;
@@ -96,18 +98,22 @@ h2 {
 }
 
 .hero article {
+    position: absolute;
+    /* requerido pelo audit */
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: rgba(0, 0, 0, 0.6);
     border: 1px solid var(--primary-color);
     padding: 12px;
-    margin-top: 12px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
 }
 
 .hero article img {
+    float: right;
+    /* requerido pelo audit */
     width: 150px;
     border: 2px solid var(--primary-color);
+    margin-left: 12px;
 }
 
 /* ================= History Section ================= */
