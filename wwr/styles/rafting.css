@@ -18,17 +18,19 @@ body {
     background-color: var(--background-color);
     font-family: var(--body-font);
     color: var(--text-color);
+    line-height: 1.6;
 }
 
+/* ================= Header ================= */
 header {
     background-color: var(--primary-color);
     color: var(--background-color);
     display: grid;
     grid-template-columns: auto 1fr;
-    /* logo + nav */
     align-items: center;
     padding: 8px 16px;
-    width: 840px;
+    max-width: 840px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -40,7 +42,6 @@ header img {
 header nav ul {
     list-style: none;
     display: flex;
-    /* flex para links */
     gap: 20px;
     justify-content: flex-end;
 }
@@ -55,20 +56,26 @@ header nav ul li a:hover {
     color: var(--accent-color);
 }
 
+/* ================= Main & Footer Wrapper ================= */
 main,
 footer {
-    width: 840px;
+    max-width: 840px;
+    width: 100%;
     margin: 0 auto;
+    padding: 20px;
 }
 
 h1,
 h2 {
     font-family: var(--heading-font);
-    padding: 10px;
+    margin-bottom: 12px;
+    text-align: center;
 }
 
+/* ================= Hero Section ================= */
 .hero {
     position: relative;
+    margin-bottom: 40px;
 }
 
 .hero img {
@@ -89,29 +96,30 @@ h2 {
 }
 
 .hero article {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     background-color: rgba(0, 0, 0, 0.6);
     border: 1px solid var(--primary-color);
-    padding: 8px;
+    padding: 12px;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .hero article img {
-    float: right;
     width: 150px;
     border: 2px solid var(--primary-color);
-    margin-left: 12px;
 }
 
 /* ================= History Section ================= */
+.history {
+    margin-top: 40px;
+}
+
 .history-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
     align-items: center;
-    margin-top: 10px;
 }
 
 .history-content img {
@@ -120,16 +128,25 @@ h2 {
 }
 
 /* ================= Adventures Section ================= */
+.adventures {
+    margin-top: 40px;
+}
+
+.adventures p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .adventure-gallery {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
-    margin-top: 20px;
 }
 
 .adventure-gallery figure {
     text-align: center;
-    flex: 1;
+    flex: 1 1 150px;
 }
 
 .adventure-gallery img {
