@@ -1,0 +1,18 @@
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(244, 13, 13);
+    letter-spacing: 1px;
+}
+
+th,
+td {
+    border: 1px solid rgb(27, 27, 255);
+    padding: 5px 18px;
+    text-align: center;
+}
+
+thead th,
+tfoot tr {
+    background-color: rgb(14, 94, 14);
+    font-weight: 750;
+}

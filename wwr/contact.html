@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Horizonte Selvagem Rafting</title>
+    <meta name="description"
+      content="Get in touch with Horizonte Selvagem Rafting. Find our address, phone, email, and send us your questions or reservations through the contact form.">
+    <meta name="author" content="Cardeal Felisberto">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <img src="images/logo.png" alt="Horizonte Selvagem Rafting company logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Cabeçalho da área de contacto -->
+        <div class="contact-header">
+            <h1>Contact Horizonte Selvagem Rafting</h1>
+            <p>Rua das Sete Ilhas, Katembe, Maputo</p>
+            <p>Phone: +258 84 217 0113</p>
+            <p>Email: info@horizontesr.com</p>
+        </div>
+
+        <!-- Grid com mapa e formulário -->
+        <div class="contact-wrapper">
+            <!-- Mapa -->
+            <section class="company-info">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13818.118778233125!2d32.506191278025504!3d-25.980560633321094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2smz!4v1770309120052!5m2!1spt-PT!2smz"
+                  allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
+            <!-- Formulário -->
+            <section class="contact-form">
+                <form action="process_form.php" method="post">
+                    <div class="form-row">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <fieldset>
+                        <legend>Message Purpose:</legend>
+                        <label><input type="radio" name="purpose" value="General Inquiry" required>
+                            General Inquiry</label>
+                        <label><input type="radio" name="purpose" value="Reservation Question">
+                            Reservation Question</label>
+                        <label><input type="radio" name="purpose" value="Website Suggestion">
+                            Website Suggestion</label>
+                    </fieldset>
+
+                    <div class="form-row">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <label>
+                        <input type="checkbox" name="newsletter"> Please subscribe me to the monthly
+                        newsletter
+                    </label>
+
+                    <button type="submit">Get in Touch</button>
+                </form>
+            </section>
+        </div>
+
+        <!-- Perfis da equipe -->
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+            <figure>
+                <img src="images/employee1.png" alt="Rafting Guide João">
+                <figcaption>João – Lead Rafting Guide</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee2.png" alt="Safety Coordinator Maria">
+                <figcaption>Maria – Safety Coordinator</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee3.png" alt="Customer Service Pedro">
+                <figcaption>Pedro – Customer Service</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Horizonte Selvagem Rafting | Cardeal Felisberto</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com/cardealfelisberto" target="_blank">
+                <img src="images/facebook_icon.svg" alt="Facebook icon link">
+            </a>
+            <a href="https://www.instagram.com/cardealfelisberto" target="_blank">
+                <img src="images/instagram_icon.svg" alt="Instagram icon link">
+            </a>
+            <a href="https://www.linkedin.com/in/cardealfelisberto" target="_blank">
+                <img src="images/linkedin_icon.svg" alt="LinkedIn icon link">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
