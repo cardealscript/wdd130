@@ -328,3 +328,173 @@ footer .socialmedia img {
     text-decoration: none;
     display: inline-block;
 }
+
+/* ============================ */
+/* -==========================- */
+
+/* ================= Home Page ================= */
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.home-item img {
+    width: 100%;
+    border: 2px solid var(--primary-color);
+}
+
+.home-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.home-item h2 {
+    margin-top: 12px;
+}
+
+.newsletter {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    background-color: rgb(30, 30, 30);
+    color: var(--text-color);
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: rgb(180, 0, 0);
+}
+
+.cta {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.cta-button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* ================================== */
+/* ================================== */
+
+/* ================= Trips Page ================= */
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.trip img {
+    width: 100%;
+    border: 2px solid var(--primary-color);
+}
+
+.trip h2 {
+    margin-top: 12px;
+}
+
+.trip-table {
+    margin-top: 50px;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th,
+.trip-table td {
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+    text-align: center;
+}
+
+.trip-table th {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
+.trip-table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* ================= Contact Page Headings ================= */
+.company-info h2,
+.contact-form h2 {
+    margin-bottom: 16px;
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+/* Ajuste para iframe do mapa */
+.company-info iframe {
+    width: 100%;
+    height: 300px;
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+}
+
+/* Ajuste para formulário */
+.contact-form {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 16px;
+}
+
+.contact-form button[type="submit"] {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: rgb(180, 0, 0);
+}
